@@ -1,0 +1,90 @@
+:root {
+    --primary-green: #007a33; /* لون نادي الاتحاد */
+    --dark-bg: #1a1a1a;
+    --text-light: #ecf0f1;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, var(--dark-bg), var(--primary-green));
+    color: var(--white);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--primary-green);
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.card {
+    background: var(--white);
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-right: 8px solid var(--primary-green);
+}
+
+h2 {
+    color: var(--primary-green);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.btn-yt {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-yt:hover {
+    transform: scale(1.05);
+    background-color: #cc0000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--dark-bg);
+    color: var(--white);
+    margin-top: 40px;
+}
+
+/* انيميشن التلاشي */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s all ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
